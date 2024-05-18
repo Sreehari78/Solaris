@@ -1,0 +1,268 @@
+version: "3.1"
+
+stories:
+  - story: greet
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: who are you
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+  - story: solar underperformance
+    steps:
+      - intent: solar_underperformance
+      - action: utter_solar_underperformance
+
+  - story: solar loss
+    steps:
+      - intent: solar_loss
+      - action: utter_solar_loss
+
+  - story: causes underperformance
+    steps:
+      - intent: causes_underperformance
+      - action: utter_causes_underperformance_1
+      - action: utter_causes_underperformance_2
+      - action: utter_causes_underperformance_3
+      - action: utter_causes_underperformance_4
+      - action: utter_causes_underperformance_5
+
+  - story: causes solar loss
+    steps:
+      - intent: causes_solar_loss
+      - action: utter_causes_solar_loss_1
+      - action: utter_causes_solar_loss_2
+      - action: utter_causes_solar_loss_3
+      - action: utter_causes_solar_loss_4
+      - action: utter_causes_solar_loss_5
+      - action: utter_causes_solar_loss_6
+      - action: utter_causes_solar_loss_7
+
+  - story: issues solar inverters
+    steps:
+      - intent: issues_solar_inverters
+      - action: utter_issues_solar_inverters_1
+      - action: utter_issues_solar_inverters_2
+      - action: utter_issues_solar_inverters_3
+      - action: utter_issues_solar_inverters_4
+
+  - story: Measure Performance Solar Plants
+    steps:
+      - intent: measure_performance_solar_plants
+      - action: utter_measure_performance_solar_plants
+
+  - story: Factors Affect Generatio Ssolar Power
+    steps:
+      - intent: factors_affect_generation_solar_power
+      - action: utter_factors_affect_generation_solar_power
+
+  - story: Predicting Solar Power
+    steps:
+      - intent: predicting_solar_power
+      - action: utter_predicting_solar_power
+
+  - story: Contribution AI
+    steps:
+      - intent: contribution_AI
+      - action: utter_contribution_AI
+
+  - story: Improve Solar Power Performance
+    steps:
+      - intent: improve_solar_power_performance
+      - action: utter_improve_solar_power_performance
+
+  - story: Measure Solar Power Performance
+    steps:
+      - intent: measure_solar_power_performance
+      - action: utterrr_measure_solar_power_performance
+
+  - story: SolarBhai Platform
+    steps:
+      - intent: SolarBhai_platform
+      - action: utter_SolarBhai_platform
+
+  - story: Benefits Solar Performance Management
+    steps:
+      - intent: benefits_solar_performance_management
+      - action: utter_benefits_solar_performance_management
+
+  - story: Losses Solar Power Plants
+    steps:
+      - intent: losses_solar_power_plants
+      - action: utter_losses_solar_power_plants
+
+  - story: Proactive Detection
+    steps:
+      - intent: proactive_detection
+      - action: utter_proactive_detection
+
+  - story: Safety Solar Power Plants
+    steps:
+      - intent: safety_solar_power_plants
+      - action: utter_safety_solar_power_plants
+
+  - story: Roles Available SolarBhai
+    steps:
+      - intent: roles_available_SolarBhai
+      - action: utter_roles_available_SolarBhai
+
+  - story: Assigne Roles SolarBhai
+    steps:
+      - intent: assigne_roles_SolarBhai
+      - action: utter_assigne_roles_SolarBhai
+
+  - story: Access Tickets SolarBhai
+    steps:
+      - intent: access_tickets_SolarBhai
+      - action: utter_access_tickets_SolarBhai
+
+  - story: Ticket Management
+    steps:
+      - intent: ticket_management
+      - action: utter_ticket_management
+
+  - story: Users View Ticket Details
+    steps:
+      - intent: users_view_ticket_details
+      - action: utter_users_view_ticket_details
+
+  - story: Assign Issues to Team
+    steps:
+      - intent: assign_issues_to_team
+      - action: utter_assign_issues_to_team
+
+  - story: Status Dashboard
+    steps:
+      - intent: status_dashboard
+      - action: utter_status_dashboard
+
+  - story: Summary Table SolarBhai
+    steps:
+      - intent: summary_table_SolarBhai
+      - action: utter_summary_table_SolarBhai
+
+  - story: Key Performance Indicators
+    steps:
+      - intent: key_performance_indicators
+      - action: utter_key_performance_indicators
+
+  - story: Summary Visualizations SolarBhai
+    steps:
+      - intent: summary_visualizations_SolarBhai
+      - action: utter_summary_visualizations_SolarBhai
+
+  - story: Interact With Tables
+    steps:
+      - intent: interact_with_tables
+      - action: utter_interact_with_tables
+
+  - story: Filter Display Additional Informations
+    steps:
+      - intent: filter_display_additional_informations
+      - action: utter_filter_display_additional_informations
+
+  - story: Additional Information For Sites
+    steps:
+      - intent: additional_information_for_sites
+      - action: utter_additional_information_for_sites
+
+  - story: FAQ - Benefits of Solar Energy
+    steps:
+      - intent: faq_benefits_of_solar_energy
+      - action: utter_faq_benefits_of_solar_energy
+
+  - story: FAQ - Types of Solar Panels
+    steps:
+      - intent: faq_types_of_solar_panels
+      - action: utter_faq_types_of_solar_panels
+
+  - story: FAQ - Solar Panel Maintenance
+    steps:
+      - intent: faq_solar_panel_maintenance
+      - action: utter_faq_solar_panel_maintenance
+
+  - story: FAQ - Solar Panel Lifetime
+    steps:
+      - intent: faq_solar_panel_lifetime
+      - action: utter_faq_solar_panel_lifetime
+
+  - story: FAQ - Solar Panel Efficiency
+    steps:
+      - intent: faq_solar_panel_efficiency
+      - action: utter_faq_solar_panel_efficiency
+
+  - story: FAQ - Solar Panel Installation Process
+    steps:
+      - intent: faq_solar_panel_installation_process
+      - action: utter_faq_solar_panel_installation_process
+
+  - story: FAQ - Solar Panel Orientation
+    steps:
+      - intent: faq_solar_panel_orientation
+      - action: utter_faq_solar_panel_orientation
+
+  - story: FAQ - Solar Panel Shading Issues
+    steps:
+      - intent: faq_solar_panel_shading_issues
+      - action: utter_faq_solar_panel_shading_issues
+
+  - story: FAQ - Solar Panel Cleaning Frequency
+    steps:
+      - intent: faq_solar_panel_cleaning_frequency
+      - action: utter_faq_solar_panel_cleaning_frequency
+
+  - story: FAQ - Solar Inverter Maintenance
+    steps:
+      - intent: faq_solar_inverter_maintenance
+      - action: utter_faq_solar_inverter_maintenance
+
+  - story: FAQ - Solar Battery Storage
+    steps:
+      - intent: faq_solar_battery_storage
+      - action: utter_faq_solar_battery_storage
+
+  - story: FAQ - Solar Net Metering
+    steps:
+      - intent: faq_solar_net_metering
+      - action: utter_faq_solar_net_metering
+
+  - story: FAQ - Solar Power Incentives
+    steps:
+      - intent: faq_solar_power_incentives
+      - action: utter_faq_solar_power_incentives
+
+  - story: FAQ - Solar Energy Environmental Impact
+    steps:
+      - intent: faq_solar_energy_environmental_impact
+      - action: utter_faq_solar_energy_environmental_impact
+
+  - story: FAQ - Solar Energy Future Outlook
+    steps:
+      - intent: faq_solar_energy_future_outlook
+      - action: utter_faq_solar_energy_future_outlook
+
+  - story: Query consumer data
+    steps:
+      - intent: ask_consumption_details
+      - action: utter_ask_id
+      - intent: my_user_id
+      - action: action_consumption_details
+
+  - story: Ask queestion from docs
+    steps:
+      - intent: ask_question
+      - action: utter_ask_question
+      - intent: get_question
+      - action: action_default_fallback
+
+  - story: Fallbak
+    steps:
+      - intent: get_question
+      - action: action_default_fallback

@@ -1,0 +1,288 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - solar_underperformance
+  - solar_loss
+  - causes_underperformance
+  - causes_solar_loss
+  - issues_solar_inverters
+  - measure_performance_solar_plants
+  - factors_affect_generation_solar_power
+  - predicting_solar_power
+  - contribution_AI
+  - improve_solar_power_performance
+  - measure_solar_power_performance
+  - SolarBhai_platform
+  - benefits_solar_performance_management
+  - losses_solar_power_plants
+  - proactive_detection
+  - safety_solar_power_plants
+  - roles_available_SolarBhai
+  - assigne_roles_SolarBhai
+  - access_tickets_SolarBhai
+  - ticket_management
+  - users_view_ticket_details
+  - assign_issues_to_team
+  - status_dashboard
+  - summary_table_SolarBhai
+  - key_performance_indicators
+  - summary_visualizations_SolarBhai
+  - interact_with_tables
+  - filter_display_additional_informations
+  - additional_information_for_sites
+  - faq_benefits_of_solar_energy
+  - faq_types_of_solar_panels
+  - faq_solar_panel_maintenance
+  - faq_solar_panel_lifetime
+  - faq_solar_panel_efficiency
+  - faq_solar_panel_installation_process
+  - faq_solar_panel_orientation
+  - faq_solar_panel_shading_issues
+  - faq_solar_panel_cleaning_frequency
+  - faq_solar_inverter_maintenance
+  - faq_solar_battery_storage
+  - faq_solar_net_metering
+  - faq_solar_power_incentives
+  - faq_solar_energy_environmental_impact
+  - faq_solar_energy_future_outlook
+  - ask_consumption_details
+  - ask_billing_info
+  - my_user_id
+  - ask_question
+  - get_question
+
+entities:
+  - user_id
+  - question
+
+slots:
+  user_id:
+    type: text
+    mappings:
+      - type: from_text
+        entity: my_user_id
+
+  question:
+    type: text
+    mappings:
+      - type: from_text
+        entity: get_question
+
+responses:
+  utter_greet:
+    - text: "Hello, How can I help you?"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am SolarBhai, powered by Rasa. You can ask me anything related to solar power plants."
+
+  utter_solar_underperformance:
+    - text: "Solar underperformance refers to any deviation in the performance of a solar power plant, indicating a lower energy yield than expected."
+
+  utter_solar_loss:
+    - text:
+        "Solar losses often go unnoticed because many plant owners mistake solar generation monitoring for solar performance
+        management. They believe that as long as the solar panels are generating energy, the plant is performing optimally,
+        which is not always the case."
+
+  utter_causes_underperformance_1:
+    - text: "The key causes of solar underperformance in rooftop solar plants are"
+
+  utter_causes_underperformance_2:
+    - text: "Quality degradation of solar components - Over time, solar panels, inverters, and other components can develop faults or experience decreased efficiency due to factors like harsh weather conditions, manufacturing defects, improper installation, or wear and tear."
+
+  utter_causes_underperformance_3:
+    - text: "Extreme climate - Events such as storms, snow, hurricanes, hail, heat waves, heavy rains, and prolonged exposure to pollution and soiling can damage solar panels and reduce their performance."
+
+  utter_causes_underperformance_4:
+    - text: "Unstable grid - Fluctuations in the electrical grid, such as surges, variations in voltage supply, power outages, high voltage errors, or low voltage errors, can affect the performance of solar power systems connected to the grid."
+
+  utter_causes_underperformance_5:
+    - text: "Improper maintenance - Failure to perform regular maintenance, including cleaning panels, can lead to a buildup of dust, debris, or soil, reducing panel efficiency. Improper maintenance practices, such as using harsh chemicals or high-pressure water for cleaning, can also damage components and decrease performance."
+
+  utter_causes_solar_loss_1:
+    - text: " Some common issues that cause losses in solar panels are "
+
+  utter_causes_solar_loss_2:
+    - text: "Potential Induced Degradation (PID): It occurs when a voltage difference between the solar panel's cells and the ground is formed due to moisture or pollutants, leading to a degradation of the cells and reduced energy output."
+
+  utter_causes_solar_loss_3:
+    - text: "Micro cracks or Cell Cracks: Cell cracks can occur during transportation, installation, or due to environmental factors such as hail, temperature changes, or mechanical stress. They can decrease power output or cause complete module failure."
+
+  utter_causes_solar_loss_4:
+    - text: "Hotspots: Localized spots on the solar module where excessive heat is generated due to shading, damage, or improper connection. Hotspots can cause permanent damage, reduce lifespan, and lead to solar fires."
+
+  utter_causes_solar_loss_5:
+    - text: "Delamination: Separation of the layers of the solar module due to moisture or environmental factors. It results in decreased power output or module failure and increases the risk of fire."
+
+  utter_causes_solar_loss_6:
+    - text: "Snail trails: Discoloration on the surface of solar modules due to moisture or environmental factors. While they may not impact power output significantly, they can be a symptom of other issues such as delamination or corrosion."
+
+  utter_causes_solar_loss_7:
+    - text: "Soiling: Accumulation of dirt or debris on solar panels, reducing their performance. Periodic cleaning can help reduce soiling losses."
+
+  utter_issues_solar_inverters_1:
+    - text: "Some common issues in solar inverters are"
+
+  utter_issues_solar_inverters_2:
+    - text: "Inverter deration: It occurs when the internal temperature of the inverter increases, leading to a decrease in efficiency. Inverters automatically reduce output power or switch to a lower power mode to prevent overheating. Issues with inverter fans, heat dissipation, or direct exposure to sunlight can cause deration."
+
+  utter_issues_solar_inverters_3:
+    - text: "Inverter clipping loss: Clipping occurs when the solar module's potential power output capacity exceeds the inverter's output power, resulting in lost energy. It often happens when the DC capacity of the power plant exceeds the AC capacity of the inverter."
+
+  utter_issues_solar_inverters_4:
+    - text: "Insulation fault: Insulation failure in cables, connectors, junction boxes, or inverters can cause insulation faults. Moisture ingress, physical damage, or manufacturing defects can trigger these faults, which may result in fire"
+
+  utter_factors_affect_generation_solar_power:
+    - text: "Solar component specification, site conditions, climatic conditions, soiling, and shading."
+
+  utter_predicting_solar_power:
+    - text: "They fail to capture the complexity and uncertainty associated with the data sources used for prediction."
+
+  utter_contribution_AI:
+    - text: "AI models can capture the complexity asscociated with data sources and accurately predict the generation of solar power plants as well as assign a performance score."
+
+  utter_improve_solar_power_performance:
+    - text: "Track performance, pinpoint actions, and check the effectiveness of actions."
+
+  utterrr_measure_solar_power_performance:
+    - text: "The solar performance score is continuously measured using AI models."
+
+  utter_SolarBhai_platform:
+    - text: "It detects performance issues, generates corrective action plans, and monitors the effectiveness of implemented actions."
+
+  utter_benefits_solar_performance_management:
+    - text: "It can improve solar generation by up to 15%, enhance the lifetime of the solar plant, and ensure safety of solar plant operation."
+
+  utter_losses_solar_power_plants:
+    - text: "High voltage errors during peak production time, unaddressed inverter or breaker trip issues, temperature deration,  and soiling losses."
+
+  utter_proactive_detection:
+    - text: "It allows for timely interventions to prevent major problems that can negatively impact equipment health."
+
+  utter_safety_solar_power_plants:
+    - text: "Inverters and other components such as DC cables, connectors, DC junction box etc. operating at high voltage can be prone to faults that could lead to dc arcing related fire or electric shock."
+
+  utter_measure_performance_solar_plants:
+    - text: "Accurate measurement allows for identification of areas for improvement and optimization of efficiency."
+
+  utter_roles_available_SolarBhai:
+    - text: "The platform offers multiple roles for users, including Admin, Manager, Employee, and Technician."
+
+  utter_assigne_roles_SolarBhai:
+    - text: "Users are assigned their roles when they register in the portal."
+
+  utter_access_tickets_SolarBhai:
+    - text: "The access to tickets and analytics dashboards is restricted based on the user's role."
+
+  utter_ticket_management:
+    - text: "The platform auto-generates tickets using AI and allows users to filter them based on whether they are pending, open, or closed. Tickets can also be sorted by priority, date, or other fields. Users can also generate tickets on their own and assign to sub-ordinates. "
+
+  utter_users_view_ticket_details:
+    - text: "Users can click on a ticket to view its details and the recommended action associated with it."
+
+  utter_assign_issues_to_team:
+    - text: "Yes, users can assign issues to their team members within the platform."
+
+  utter_status_dashboard:
+    - text: "The Status Dashboards give a high-level overview of site performance, classifying sites into categories such as Healthy, Communication Loss, Unhealthy, and Production Issue. The dashboards also display count and kilowatt peak capacity for each category."
+
+  utter_summary_table_SolarBhai:
+    - text: "The summary table shows additional information such as the duration an issue has been pending as a ticket (P_days), the trend of performance deviation in the past 7 days, and the percentage deviation (perc)dev) in a site's performance against predicted output."
+
+  utter_key_performance_indicators:
+    - text: "The key performance indicators in the summary table include average kilowatt hour per kilowatt peak generation, shading, soiling loss, average loss due to performance deviation, and average uptime across all sites."
+
+  utter_summary_visualizations_SolarBhai:
+    - text: "The platform provides summary visualizations that compare the count of sites with the intensity of issues in categories such as soiling, shading, production loss, and mismatch"
+
+  utter_interact_with_tables:
+    - text: "All tables are interactive and can be sorted by any field by clicking on the headers."
+
+  utter_filter_display_additional_informations:
+    - text: "The platform allows the use of flag filters to display additional information for sites. Selecting a specific flag, such as 'Production Issue,' will filter the dashboard for all sites with that issue and display relevant information."
+
+  utter_additional_information_for_sites:
+    - text: "For sites with communication loss, the platform displays the duration the site has been offline, as well as the last known status of the site, including flag, rating, percentage deviation, and uptime."
+
+  utter_faq_benefits_of_solar_energy:
+    - text: "Some benefits of solar energy include reduced electricity bills, lower carbon footprint, energy independence, and increased property value."
+
+  utter_faq_types_of_solar_panels:
+    - text: "There are primarily three types of solar panels: monocrystalline, polycrystalline, and thin-film. Each type has its own advantages and disadvantages in terms of efficiency, cost, and aesthetics."
+
+  utter_faq_solar_panel_maintenance:
+    - text: "Solar panel maintenance typically involves regular cleaning to remove dirt and debris, checking for shading issues, inspecting for damage or defects, and ensuring proper functioning of inverters and other components."
+
+  utter_faq_solar_panel_lifetime:
+    - text: "The average lifespan of solar panels is around 25-30 years. However, their efficiency may degrade over time, resulting in slightly reduced performance."
+
+  utter_faq_solar_panel_efficiency:
+    - text: "Solar panel efficiency refers to the percentage of sunlight that is converted into electricity. Higher efficiency panels can generate more electricity in the same amount of sunlight."
+
+  utter_faq_solar_panel_installation_process:
+    - text: "The solar panel installation process typically involves site assessment, design, permitting, installation of racking and mounting systems, connection to electrical systems, and final inspection."
+
+  utter_faq_solar_panel_orientation:
+    - text: "Solar panels should ideally be oriented towards the south (in the northern hemisphere) to maximize sunlight exposure. However, the optimal orientation may vary depending on location and specific site conditions."
+
+  utter_faq_solar_panel_shading_issues:
+    - text: "Shading can significantly reduce the performance of solar panels. It's important to minimize shading from trees, buildings, or other obstructions when installing solar panels."
+
+  utter_faq_solar_panel_cleaning_frequency:
+    - text: "Solar panels should be cleaned regularly to maintain optimal performance. The frequency of cleaning depends on factors such as location, climate, and the level of soiling."
+
+  utter_faq_solar_inverter_maintenance:
+    - text: "Solar inverters should be inspected periodically for dust buildup, damage, or malfunction. It's important to follow manufacturer guidelines for maintenance and schedule regular inspections by qualified technicians."
+
+  utter_faq_solar_battery_storage:
+    - text: "Solar battery storage systems allow homeowners to store excess energy generated by their solar panels for use during periods of low sunlight or high electricity demand. This can increase energy independence and reduce reliance on the grid."
+
+  utter_faq_solar_net_metering:
+    - text: "Net metering is a billing arrangement that allows solar panel owners to receive credit for excess electricity they generate and feed back into the grid. It helps offset electricity costs and encourages the adoption of solar energy."
+
+  utter_faq_solar_power_incentives:
+    - text: "There are various incentives available to encourage the adoption of solar power, such as tax credits, rebates, grants, and feed-in tariffs. These incentives can help offset the upfront costs of installing solar panels."
+
+  utter_faq_solar_energy_environmental_impact:
+    - text: "Solar energy has minimal environmental impact compared to conventional energy sources like coal or natural gas. It produces no greenhouse gas emissions during operation and helps reduce air and water pollution."
+
+  utter_faq_solar_energy_future_outlook:
+    - text: "The future outlook for solar energy is promising, with continued technological advancements, cost reductions, and increasing adoption worldwide. Solar energy is expected to play a significant role in transitioning to a more sustainable energy future."
+
+  utter_ask_id:
+    - text: "Sure! Please provide your userID to proceed."
+
+  utter_ask_question:
+    - text: "Sure! Please provide your question to proceed."
+
+  # utter_ask_consumption_details:
+  #   - text: "Sure! Please provide your name to fetch your consumption details."
+
+  # utter_ask_billing_details:
+  #   - text: "Sure! Please provide your name to fetch your billing details."
+
+actions:
+  - action_consumption_details
+  - action_default_fallback
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

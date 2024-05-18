@@ -1,0 +1,534 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - who are you?
+      - are you a human or a bot?
+      - are you a real person?
+      - you're a bot, aren't you?
+      - you're not human, right?
+      - you're a bot?
+
+  - intent: solar_underperformance
+    examples: |
+      - What is solar underperformance?
+      - How would you define solar energy underperformance?
+      - What does it mean when we say solar panels are underperforming?
+      - Can you explain the concept of solar energy underperformance?
+      - What is the significance of solar underperformance?
+      - What is the definition of underperformance in the context of solar power generation?
+      - How can we understand the term "solar underperformance"?
+      - What are the implications of solar panels not meeting performance expectations?
+      - Could you provide a description of solar underperformance?
+      - What constitutes solar underperformance?
+      - How can we identify and measure solar underperformance?
+
+  - intent: solar_loss
+    examples: |
+      - Why do solar losses often go unnoticed?
+      - What factors contribute to the lack of awareness regarding solar losses?
+      - Why is it common for solar power generation losses to be overlooked?
+      - What are the reasons behind the unnoticed nature of solar energy losses?
+      - How does the phenomenon of solar losses often escape detection?
+      - What leads to the underrecognition of solar energy losses?
+      - Why do solar power generation losses frequently remain unnoticed?
+      - What are the factors that make it challenging to notice solar energy losses?
+      - What contributes to the lack of observation regarding solar losses?
+      - How can solar power generation losses be easily missed?
+      - Why is it difficult to detect solar losses in a timely manner?
+
+  - intent: causes_underperformance
+    examples: |
+      - What are the key causes of solar underperformance?
+      - What are the primary factors responsible for solar energy underperformance?
+      - What are the main drivers of underperformance in solar power generation?
+      - What are the critical factors that lead to solar underperformance?
+      - What are the primary causes of underperformance in solar energy systems?
+      - What factors contribute to the underperformance of solar panels?
+      - What are the key elements that result in solar power generation underperformance?
+      - What are the main influences behind solar energy underperformance?
+      - What factors are most commonly associated with solar underperformance?
+      - What are the primary contributors to underperformance in solar energy generation?
+      - What are the leading causes of underperformance in solar panels?
+
+  - intent: causes_solar_loss
+    examples: |
+      - What are some common issues that cause losses in solar panels?
+      - What are the typical problems that lead to decreased performance in solar panels?
+      - What are some frequent issues that result in reduced output from solar panels?
+      - What are the common factors that contribute to power losses in solar panels?
+      - What are some typical challenges that cause diminished efficiency in solar panels?
+      - What are the recurring issues that lead to lower energy production in solar panels?
+      - What are some prevalent problems that result in decreased power generation from solar panels?
+      - What are the usual difficulties that cause reduced performance in solar panels?
+      - What are some standard factors that contribute to energy losses in solar panels?
+      - What are the common obstacles that lead to decreased efficiency in solar panels?
+      - What are some typical issues that result in diminished output from solar panels?
+
+  - intent: issues_solar_inverters
+    examples: |
+      - What are some common issues in solar inverters?
+      - What are the typical problems encountered with solar inverters?
+      - What are some prevalent challenges associated with solar inverter performance?
+      - What are the common issues that arise in the operation of solar inverters?
+      - What are some recurring difficulties experienced with solar inverter functionality?
+      - What are the usual problems observed in the performance of solar inverters?
+      - What are some standard challenges faced by solar inverters?
+      - What are the typical issues that affect the functioning of solar inverters?
+      - What are some common obstacles encountered with solar inverter operation?
+      - What are the frequent difficulties experienced with solar inverter functionality?
+      - What are the regular issues observed in the performance of solar inverters?
+
+  - intent: measure_performance_solar_plants
+    examples: |
+      - Why is it important to measure the performance of solar power plants?
+      - Why is it crucial to gauge how well solar power plants are performing?
+      - Why is it crucial to evaluate the effectiveness of solar power plants?
+      - The performance of solar power facilities has to be measured because...
+      - Why is it vital to gauge how well solar power plants are performing?
+      - Why is it crucial to gauge how well solar power plants are performing?
+      - Why is it significant to evaluate the efficacy of solar power plants?
+      - The effectiveness of solar power facilities has to be measured for...
+      - Why is it essential for knowing how well solar power plants are performing?
+      - Why is it significant for determining how efficiently solar power plants are performing?
+
+  - intent: factors_affect_generation_solar_power
+    examples: |
+      - What factors affect the generation of solar power plants?
+      - What elements have an impact on the production of solar power plants?
+      - What elements have an impact on solar power plant production?
+      - What elements influence solar power plant production?
+      - What elements influence the production of solar power plants?
+      - Which factors have an influence on the generation of solar power plants?
+      - What aspects have had an effect on solar power plant manufacturing?
+      - What variables govern solar power plant manufacture?
+      - Which features increase the development of solar power plants?
+      - What characteristics have resulted in the production of solar energy plants?
+
+  - intent: predicting_solar_power
+    examples: |
+      - How can theoretical models be unreliable in predicting solar power plant generation?
+      - How is it possible for theoretical models to anticipate solar power plant production to be unreliable?
+      - How may theoretical models be incorrect in estimating the production of solar power plants?
+      - How is the generation from solar power plants predicted by theoretical models to be unreliable?
+      - How is it possible for theoretical models to be erroneous in estimating the output of solar power plants?
+      - How is it feasible for theoretical models to foresee solar power plant production to be unreliable?
+      - How is it feasible for theoretical models to foresee a solar energy plant's production to be unreliable?
+      - How is the production from solar power plants predicted by theoretical models to be not trustworthy?
+      - How is it possible for theoretical models to anticipate solar power plant production to be unreliable?
+      - How is it probable that theoretical models are mistaken in estimating the output of solar power plants?
+
+  - intent: contribution_AI
+    examples: |
+      - How can Artificial Intelligence (AI) contribute to improving solar power plant generation?
+      - How might artificial intelligence (AI) help increase the output of solar power plants?
+      - What benefits may artificial intelligence (AI) provide to the production of solar power plants?
+      - What role does artificial intelligence (AI) play in enhancing the output of solar power plants?
+      - How could artificial intelligence help increase the generation of solar power plants?
+      - How might artificial intelligence assist in boosting the output of solar power plants?
+      - How might AI assist with improving the output of solar power plants?
+      - What role may AI play in enhancing the output of solar power plants?
+      - What function should AI play to boost the production of solar power?
+      - How might AI help increase the production of solar power plants?
+
+  - intent: improve_solar_power_performance
+    examples: |
+      - What is the three-step process to improve solar power plant performance?
+      - What is the three-step procedure for enhancing the performance of solar power plants?
+      - What three steps are involved in enhancing the performance of solar power plants?
+      - What is the three-step strategy for enhancing the performance of solar power plants?
+      - What steps are involved in enhancing the performance of solar power plants?
+      - What procedures are involved when improving the performance of solar power plants?
+      - What procedures are involved when improving the efficiency of solar power plants?
+      - How can the performance of solar power plants be improved step by step?
+      - What steps are taken to enhance the performance of solar power plants?
+      - How is the performance of solar power plants improved?
+
+  - intent: measure_solar_power_performance
+    examples: |
+      - How is the performance of solar power plants measured?
+      - How are solar power plants' performances assessed?
+      - How is the efficiency of solar energy facilities assessed?
+      - How are solar energy facilities evaluated for performance?
+      - How is the efficiency of solar power plants evaluated?
+      - How are solar energy plants' capabilities assessed?
+      - How is the productivity of solar energy facilities assessed?
+      - How are solar energy plants evaluated for productivity?
+      - How is the capacity of solar power plants evaluated?
+      - How are solar power plants' performances assessed?
+
+  - intent: SolarBhai_platform
+    examples: |
+      - How does SolarBhai's platform help improve solar power plant performance?
+      - How might the platform from SolarBhai assist boost the efficiency of solar power plants?
+      - How can the platform of SolarBhai contribute to the performance improvement of solar power plants?
+      - How can SolarBhai's platform aid in enhancing the performance of solar power plants?
+      - How can the platform of SolarBhai contribute to the performance improvement of solar power plants?
+      - How would possibly the platform of SolarBhai helps boost the efficiency of solar power plants?
+      - How would possibly the platform of SolarBhai helps improve the efficacy of solar power plants?
+      - How will the platform of SolarBhai help to improve the efficacy of solar power plants?
+      - How will the platform of SolarBhai help to improve the performance of solar power plants?
+      - How does the platform of SolarBhai contribute to strengthening the efficiency of solar power plants?
+
+  - intent: benefits_solar_performance_management
+    examples: |
+      - What are the key benefits of solar performance management?
+      - What are the main advantages of managing solar performance?
+      - Which advantages of solar performance management stand out the most?
+      - What are solar performance management's main advantages?
+      - What are the main advantages of solar performance management?
+      - What are the primary benefits of solar performance management?
+      - What are the key benefits of managing solar performance?
+      - Which of the benefits of solar performance management stands out the most?
+      - What are solar performance management's main advantages?
+      - What are the primary advantages of solar performance monitoring?
+
+  - intent: losses_solar_power_plants
+    examples: |
+      - What are some examples of losses that can occur in solar power plants if not addressed on time?
+      - What are some instances of losses that could happen in solar power facilities if they are not promptly addressed?
+      - What are some instances of losses that solar power plants may experience if they are not properly tended to?
+      - What are a few instances of losses that might happen in solar energy facilities if they are not properly addressed?
+      - What are some instances of losses that could happen in solar power facilities if they are not promptly addressed?
+      - What are some instances of losses that could happen in solar power facilities if they are not quickly addressed?
+      - What are some chances of losses that might occur in solar power facilities if they are not quickly addressed?
+      - What are a few cases of losses that solar power plants may experience if they are not properly tended to?
+      - What are some of the instances of losses that could occur in solar energy facilities if they are not properly addressed?
+      - What are some types of losses that may arise in solar power facilities if they are not immediately addressed?
+
+  - intent: proactive_detection
+    examples: |
+      - How can proactive detection of issues improve the lifetime of solar modules and inverters?
+      - How can the lifespan of solar modules and inverters be extended by proactive issue detection?
+      - How can proactive issue identification lengthen the lifespan of solar panels and inverters?
+      - How can proactive problem detection lengthen the lifespan of solar panels and inverters?
+      - How can proactive problem detection increase the lifespan of solar panels and inverters?
+      - How can proactive problem detection increase the lifespan of solar energy systems and inverters?
+      - How might early problem identification lengthen the useful life of solar modules and inverters?
+      - How might earlier detection of issues lengthen the useful life of solar modules and inverters?
+      - How can proactive issue identification lengthen the lifespan of solar modules and inverters?
+      - How could proactive recognition of problems lengthen the lifespan of solar modules and inverters?
+
+  - intent: safety_solar_power_plants
+    examples: |
+      - Why is safety important in solar power plants?
+      - Why is safety crucial in solar energy facilities?
+      - What are the benefits of safety in solar power plants?
+      - In solar power facilities, why is safety so crucial?
+      - Why is safety crucial in solar power plants?
+      - Why is safety important in solar power facilities?
+      - Why is safety vital in solar power facilities?
+      - In solar power facilities, why is safety so significant?
+      - Why is safety essential in solar power plants?
+      - Why is safety crucial in solar power plants?
+
+  - intent: roles_available_SolarBhai
+    examples: |
+      - What are the different roles available for users in the SolarBhai platform?
+      - What distinct user roles are there on the SolarBhai platform?
+      - Which of the various user roles on the SolarBhai platform are available?
+      - What are the various user roles on the SolarBhai platform?
+      - What are the various user roles that are accessible on the SolarBhai platform?
+
+  - intent: assigne_roles_SolarBhai
+    examples: |
+      - How are users assigned their roles in the SolarBhai platform?
+      - The SolarBhai platform uses a system to assign responsibilities to users.
+      - How are user roles assigned on the SolarBhai platform?
+      - What system does the SolarBhai platform utilise to assign roles to users?
+
+  - intent: access_tickets_SolarBhai
+    examples: |
+      - What determines the access to tickets and analytics dashboards in the SolarBhai platform?
+      - How is access to the ticketing and analytics dashboards on the SolarBhai platform determined?
+      - What defines who has access to the ticketing and analytics dashboards on the SolarBhai platform?
+      - What governs the SolarBhai platform's ticket and analytics dashboard access?
+
+  - intent: ticket_management
+    examples: |
+      - How does the platform handle ticket management?
+      - How does the platform handle managing tickets?
+      - What ticket management procedures does the platform use?
+      - How does the platform manage tickets?
+      - How is ticket management handled by the platform?
+
+  - intent: users_view_ticket_details
+    examples: |
+      - How can users view ticket details and recommended actions in the SolarBhai platform?
+      - How do users access the SolarBhai platform's ticket details and suggested actions?
+      - How does the SolarBhai platform allow users to examine ticket data and suggested actions?
+      - How can users access the SolarBhai platform's ticket details and suggested actions?
+      - How do users access the SolarBhai platform's recommended actions and ticket details?
+
+  - intent: assign_issues_to_team
+    examples: |
+      - Can users assign issues to their team in the SolarBhai platform?
+      - On the SolarBhai platform,  how are users' roles assigned?
+      - In the SolarBhai platform,  what defines who has access to tickets and analytics dashboards?
+      - Can users in the SolarBhai platform assign issues to their team?
+
+  - intent: status_dashboard
+    examples: |
+      - What information does the Status Dashboards provide in the SolarBhai platform?
+      - What details do the Status Dashboards on the SolarBhai platform offer?
+      - What information does the Status Dashboards provide in the SolarBhai platform?
+      - What data does the SolarBhai platform's Status Dashboards provide?
+      - What data does the SolarBhai platform's Status Dashboards offer?
+
+  - intent: summary_table_SolarBhai
+    examples: |
+      - What additional information is provided in the summary table of top issues in the SolarBhai platform?
+      - What further details are included in the table that summarises the most pressing problems with the SolarBhai platform?
+      - What further information can be found in the summary table of the most pressing problems with the SolarBhai platform?
+      - What further details are included in the summary table of the most pressing problems with the SolarBhai platform?
+      - What more details are included in the summary table of the most pressing problems with the SolarBhai platform?
+
+  - intent: key_performance_indicators
+    examples: |
+      - What key performance indicators are included in the summary table for all sites in the SolarBhai platform?
+      - What KPIs are listed in the table that summarises all of the SolarBhai platform's sites?
+      - What KPIs for all sites in the SolarBhai platform are listed in the summary table?
+      - What KPIs are listed in the summary table for all sites on the SolarBhai platform?
+      - What KPIs are listed in the table of summary data for all sites in the SolarBhai platform?
+
+  - intent: summary_visualizations_SolarBhai
+    examples: |
+      - What other summary visualizations are available in the SolarBhai platform?
+      - What other executive summaries are offered by the SolarBhai platform?
+      - What further summary visuals are offered by the SolarBhai platform?
+      - What further summary visualisations are offered by the SolarBhai platform?
+      - What other summaries are displayed on the SolarBhai platform?
+
+  - intent: interact_with_tables
+    examples: |
+      - How can you interact with a table in the SolarBhai platform?
+      - On the SolarBhai platform, How can you interact with tables?
+      - In the SolarBhai platform,  how may a table be manipulated?
+      - How do you interact with a table on the SolarBhai platform?
+      - How does the SolarBhai platform allow you to interact with tables?
+
+  - intent: filter_display_additional_informations
+    examples: |
+      - How can the SolarBhai platform be used to filter and display additional information for specific sites?
+      - How can more information be filtered and shown for particular sites using the SolarBhai platform?
+      - What are the several ways that the SolarBhai platform may be used to filter and display more data for particular sites?
+      - How may additional information for particular locations be filtered and displayed on the SolarBhai platform?
+      - How may additional information for particular sites be filtered and shown using the SolarBhai platform?
+
+  - intent: additional_information_for_sites
+    examples: |
+      - What additional information is provided for sites with communication loss in the SolarBhai platform?
+      - What extra details are offered for websites using the SolarBhai platform that are experiencing communication problems?
+      - What further information is offered for sites using the SolarBhai platform who are experiencing communication problems?
+      - What further information is offered for websites using the SolarBhai platform that are having communication problems?
+      - What further information is offered for websites using the SolarBhai platform that are experiencing communication problems?
+
+  - intent: faq_benefits_of_solar_energy
+    examples: |
+      - What are the benefits of solar energy?
+      - How does solar energy benefit us?
+      - Can you list the advantages of solar energy?
+      - What advantages does solar energy offer?
+      - Why should I consider solar energy?
+
+  - intent: faq_types_of_solar_panels
+    examples: |
+      - What are the different types of solar panels?
+      - Can you explain the types of solar panels available?
+      - How many types of solar panels are there?
+      - What are the main categories of solar panels?
+      - Which types of solar panels are commonly used?
+
+  - intent: faq_solar_panel_maintenance
+    examples: |
+      - How do I maintain solar panels?
+      - What is involved in solar panel maintenance?
+      - Can you provide tips for maintaining solar panels?
+      - How often should I clean my solar panels?
+      - What maintenance tasks are necessary for solar panels?
+
+  - intent: faq_solar_panel_lifetime
+    examples: |
+      - What is the lifespan of solar panels?
+      - How long do solar panels last?
+      - Do solar panels degrade over time?
+      - What factors affect the lifespan of solar panels?
+      - Can solar panels be repaired or refurbished?
+
+  - intent: faq_solar_panel_efficiency
+    examples: |
+      - How efficient are solar panels?
+      - What factors affect solar panel efficiency?
+      - Can solar panel efficiency be improved?
+      - What is the efficiency range for solar panels?
+      - Are there any advancements in solar panel efficiency?
+
+  - intent: faq_solar_panel_installation_process
+    examples: |
+      - How are solar panels installed?
+      - What is the process of installing solar panels?
+      - Who installs solar panels?
+      - How long does it take to install solar panels?
+      - Are there any permits required for solar panel installation?
+
+  - intent: faq_solar_panel_orientation
+    examples: |
+      - How should solar panels be oriented?
+      - What is the best orientation for solar panels?
+      - Can solar panels face any direction?
+      - How does orientation affect solar panel performance?
+      - What factors should I consider when orienting solar panels?
+
+  - intent: faq_solar_panel_shading_issues
+    examples: |
+      - How does shading affect solar panels?
+      - What are the consequences of shading on solar panels?
+      - Can shading reduce solar panel efficiency?
+      - How can I minimize shading issues with solar panels?
+      - What should I do if my solar panels are shaded?
+
+  - intent: faq_solar_panel_cleaning_frequency
+    examples: |
+      - How often should solar panels be cleaned?
+      - What is the recommended cleaning frequency for solar panels?
+      - Can dirty solar panels affect performance?
+      - What methods are effective for cleaning solar panels?
+      - Are there any products specifically for cleaning solar panels?
+
+  - intent: faq_solar_inverter_maintenance
+    examples: |
+      - Do solar inverters require maintenance?
+      - How do I maintain solar inverters?
+      - What are common issues with solar inverters?
+      - Can solar inverter efficiency degrade over time?
+      - When should I replace my solar inverter?
+
+  - intent: faq_solar_battery_storage
+    examples: |
+      - What is solar battery storage?
+      - How do solar battery storage systems work?
+      - Are solar batteries necessary for solar energy systems?
+      - What are the benefits of solar battery storage?
+      - Can solar batteries be used during power outages?
+
+  - intent: faq_solar_net_metering
+    examples: |
+      - What is solar net metering?
+      - How does net metering work with solar energy?
+      - Can I sell excess solar energy back to the grid?
+      - What are the advantages of solar net metering?
+      - Is net metering available in all areas?
+
+  - intent: faq_solar_power_incentives
+    examples: |
+      - Are there any incentives for installing solar panels?
+      - What financial incentives are available for solar energy?
+      - Do governments offer rebates for solar installations?
+      - How can I take advantage of solar power incentives?
+      - Are there tax credits for solar energy systems?
+
+  - intent: faq_solar_energy_environmental_impact
+    examples: |
+      - What is the environmental impact of solar energy?
+      - How does solar energy contribute to reducing emissions?
+      - Are there any environmental concerns with solar power?
+      - Can solar energy help combat climate change?
+      - What are the sustainability benefits of solar power?
+
+  - intent: faq_solar_energy_future_outlook
+    examples: |
+      - What is the future outlook for solar energy?
+      - How will solar energy evolve in the future?
+      - Are there any emerging trends in solar power?
+      - Will solar energy become more affordable in the future?
+      - What role will solar energy play in the global energy transition?
+
+  - intent: ask_consumption_details
+    examples: |
+      - What are my consumption details?
+      - Can you tell me about my consumption?
+      - How much have I consumed this month?
+      - Show my consumption details
+
+  - intent: ask_billing_info
+    examples: |
+      - What is my current bill?
+      - Can you provide information about my bill?
+      - How much do I owe?
+
+  - intent: my_user_id
+    examples: |
+      - I am [User162539](user_id)
+      - call me [User159](user_id)
+      - people call me [User23](user_id)
+      - my user_id is [User14](user_id)
+      - I am [User92](user_id)
+      - call me [User872](user_id)
+      - people call me [User23928](user_id)
+      - my user_id is [User123](user_id)
+      - [User234](user_id)
+
+  - intent: ask_question
+    examples: |
+      - Can I ask you a question?
+      - I have a question
+      - I need help with something
+      - Can you help me with a query?
+      - I have a query
+
+  - intent: get_question
+    examples: |
+      - [random text]
+      - [any input]
+      - [fallback case]
+      - [unmatched question]
+      - [anything else]
+      - [random question]
+      - [unmatched query]
